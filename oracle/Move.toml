@@ -1,0 +1,22 @@
+[package]
+name = 'Oracle'
+version = '1.0.0'
+
+
+[dependencies.AptosFramework]
+local = '../deps/aptos-framework'
+
+[dependencies.Switchboard]
+local = '../deps/switchboard'
+
+[dev-dependencies.Mock]
+local = '../mock'
+
+[addresses]
+switchboard = '_'
+oracle = '_'
+
+[dev-addresses]
+switchboard = '0x55'
+oracle = '0x42'
+mock = '0x77'
