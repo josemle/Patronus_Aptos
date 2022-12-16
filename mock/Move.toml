@@ -1,0 +1,12 @@
+[package]
+name = 'Mock'
+version = '1.0.0'
+
+[dependencies.AptosFramework]
+local = '../deps/aptos-framework'
+
+[addresses]
+mock = '_'
+
+[dev-addresses]
+mock = '0x77'

@@ -1,0 +1,14 @@
+[package]
+name = "Switchboard"
+version = "0.0.1"
+
+[addresses]
+switchboard = '_'
+
+[dev-addresses]
+switchboard = '0x55'
+
+[dependencies]
+
+[dependencies.AptosFramework]
+local = '../aptos-framework'
