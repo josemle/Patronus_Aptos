@@ -44,14 +44,14 @@ module mock::test_coin {
     public fun mint<CoinType>(amount: u64): Coin<CoinType>
         acquires CapStore
     {
-        let pool = borrow_global_mut<CapStore<CoinType>>(@mock);
+        let pool = borrow_global<CapStore<CoinType>>(@mock);
         coin::mint<CoinType>(amount, &pool.mint_cap)
     }
 
     public entry fun fund<CoinType>(user: &signer, amount: u64)
         acquires CapStore
     {
-        let pool = borrow_global_mut<CapStore<CoinType>>(@mock);
+        let pool = borrow_global<CapStore<CoinType>>(@mock);
         let coins = coin::mint<CoinType>(amount, &pool.mint_cap);
         coin::deposit(address_of(user), coins);
     }
