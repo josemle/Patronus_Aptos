@@ -82,6 +82,7 @@ module oracle::oracle {
         });
     }
 
+    #[view]
     public fun lookup(coin_type: TypeInfo): (address, u8)
         acquires OracleStore
     {
@@ -90,6 +91,7 @@ module oracle::oracle {
         (oracle.feed, oracle.adapter)
     }
 
+    #[view]
     public fun get_price<CoinType>(): u64
         acquires OracleStore
     {
@@ -97,6 +99,7 @@ module oracle::oracle {
         get_price_by_type(coin_type)
     }
 
+    #[view]
     public fun get_price_by_type(coin_type: TypeInfo): u64
         acquires OracleStore
     {

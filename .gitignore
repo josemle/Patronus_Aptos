@@ -1,3 +1,5 @@
 build
 
 .aptos
+config.bat
+node_modules
