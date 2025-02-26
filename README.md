@@ -1,9 +1,9 @@
-## Patronus Contracts - Decentralized Liquidity Protocol
+# Patronus Contracts - Decentralized Liquidity Protocol
 Welcome to the Patronus Contracts repository! This project is designed to provide a decentralized liquidity protocol that powers various decentralized finance (DeFi) applications. Patronus aims to bring efficient, transparent, and secure liquidity solutions to decentralized platforms, facilitating seamless asset transfers, swaps, and liquidity management.
 
 In this repository, you'll find the smart contracts that form the backbone of the Patronus Protocol, an ecosystem aimed at improving decentralized liquidity through features like wrapped coins, oracles, and mock coins for testing.
 
-# Project Structure
+## Project Structure
 The project is structured into several key components that make up the Patronus liquidity protocol:
 
 ```
@@ -18,7 +18,7 @@ deps/: Contains the dependencies that Patronus Contracts rely on. These contract
 mock/: Includes a mock coin used to simulate transactions, test cases, and deployment without risking real funds. This is essential for testing and development environments.
 oracle/: Implements an oracle system using Switchboard, which provides real-world data to the smart contracts, enabling them to interact with external systems securely and reliably.
 wcoin/: Represents the wrapped coin system. It wraps a coin into a token that can be used on the platform, offering interoperability between various blockchains or tokens.
-# Key Features
+## Key Features
 1. Decentralized Liquidity
 Patronus Contracts provide decentralized liquidity for DeFi applications, ensuring liquidity is always available for decentralized exchanges (DEXs) and liquidity pools. The decentralized nature ensures no central authority controls the liquidity flow.
 
@@ -31,7 +31,7 @@ The oracle contracts are based on the Switchboard platform, which provides decen
 4. Mock Coin for Testing
 The mock coin is a simulated token used for testing and development. It helps developers experiment with the protocol in a safe environment, conduct tests, and deploy without interacting with real tokens.
 
-# How It Works
+## How It Works
 The core of the Patronus Protocol is the interaction between the wrapped coins, the oracle, and the liquidity pools. Here's how each component functions:
 
 Wrapped Coins (Wcoin):
@@ -50,7 +50,7 @@ During development and testing, the mock coin allows developers to simulate real
 Installation & Setup
 To get started with the Patronus Contracts, follow these steps:
 
-# Prerequisites
+## Prerequisites
 Solidity: Knowledge of Solidity and smart contract development.
 Node.js: Make sure you have Node.js installed to interact with the blockchain.
 Truffle/Hardhat: A development environment and testing framework for blockchain applications.
@@ -72,7 +72,7 @@ npx hardhat run scripts/deploy.js --network localhost
 ```
 Interact with the deployed contract: Use Hardhat's console or Truffle to interact with the deployed contracts and test their functionalities.
 
-# Contributing
+## Contributing
 We encourage contributions to this project! Whether you want to submit bug fixes, new features, or improvements to the documentation, feel free to fork the repository, make your changes, and submit a pull request.
 
 When contributing:
@@ -80,5 +80,5 @@ When contributing:
 Follow Solidity best practices.
 Write meaningful unit tests for any new features.
 Update the documentation where applicable.
-# License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+## License
+T#his project is licensed under the MIT License. See the LICENSE file for more details.
